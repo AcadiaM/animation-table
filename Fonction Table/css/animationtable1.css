@@ -1,0 +1,41 @@
+.contenu{
+    text-align: center;
+    top: 25%;
+    width: 100%;
+    position: absolute;
+}
+
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.avatar0{
+    animation-name: slideup0, slidedown0;
+    animation-duration: 1s, 1s;
+    animation-delay: 0s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier( 0, 0.49, 0, 1 ), cubic-bezier(0.54, 0, 1, 0.54 );
+}
+
+@keyframes slideup0{
+    
+    from{
+        transform: translateY(700px) scale(0%);
+    }
+    to{
+        transform: translateY(-100px) scale(100%);
+    }
+}
+
+@keyframes slidedown0{
+
+    from {
+        transform: translateY(-100px) scale(100%);
+    }
+    to{
+        transform: translateY(225px) scale(30%);
+    }
+}

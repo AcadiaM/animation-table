@@ -1,0 +1,27 @@
+.avatar1{
+    animation-name: slidedown1, slideup1;
+    animation-duration: 1s, 1s;
+    animation-delay: 0s, 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier( 0, 0.49, 0, 1 ), cubic-bezier(0.54, 0, 1, 0.54 );
+}
+
+@keyframes slidedown1{
+
+    from {
+        transform: translateY(-700px) scale(0%);
+    }
+    to{
+        transform: translateY(100px) scale(-100%);
+    }
+}
+
+@keyframes slideup1{
+    
+    from{
+        transform: translateY(100px) scale(-100%);
+    }
+    to{
+        transform: translateY(-235px) scale(-30%);
+    }
+}
